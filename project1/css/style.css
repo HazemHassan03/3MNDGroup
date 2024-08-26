@@ -271,7 +271,7 @@ header .account span:nth-child(2):hover {
   font-size: 1.6vw;
 }
 .landing > .two {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .landing > .two > h2 {
   font-size: 4.41vw;
@@ -281,6 +281,7 @@ header .account span:nth-child(2):hover {
   opacity: 0.8;
   margin-bottom: 40px;
   font-size: 1.8vw;
+  line-height: 1.6;
 }
 .landing > .two .options {
   display: grid;
@@ -423,24 +424,46 @@ header .account span:nth-child(2):hover {
 .copyright img {
   max-width: 100%;
 }
-.warning {
-  width: 500px;
+#warning {
+  width: 90vw;
+  max-width: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   background-color: white;
   padding: 20px;
   border-radius: 20px;
   font-size: 18px;
   z-index: 99999;
+  transform: translate(-50%, -50%) scale(0);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  -moz-transform: translate(-50%, -50%) scale(0);
+  -ms-transform: translate(-50%, -50%) scale(0);
+  -o-transform: translate(-50%, -50%) scale(0);
+  transition: calc(var(--transition) - 0.2s);
+  -webkit-transition: calc(var(--transition) - 0.2s);
+  -moz-transition: calc(var(--transition) - 0.2s);
+  -ms-transition: calc(var(--transition) - 0.2s);
+  -o-transition: calc(var(--transition) - 0.2s);
 }
-.warning h4,
-.warning a {
+#warning h4 {
+  color: red;
+}
+#warning h4,
+#warning a {
   display: inline-block;
   margin-bottom: 20px;
 }
-.overlay {
+#warning #close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 30px;
+  line-height: 0;
+  color: red;
+  cursor: pointer;
+}
+#overlay {
   width: 100vw;
   height: 100dvh;
   position: absolute;
@@ -448,4 +471,5 @@ header .account span:nth-child(2):hover {
   left: 0;
   background-color: rgb(255 255 255 / 70%);
   z-index: 9999;
+  display: none;
 }
