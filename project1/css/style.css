@@ -275,7 +275,7 @@ header .account span:nth-child(2):hover {
   font-size: 1.6vw;
 }
 .landing > .two {
-  padding-top: 150px;
+  padding: 115px 0 20px;
 }
 .landing > .two > h2 {
   font-size: 4.41vw;
@@ -431,7 +431,7 @@ header .account span:nth-child(2):hover {
 #warning {
   width: 90vw;
   max-width: 500px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   background-color: white;
@@ -468,9 +468,9 @@ header .account span:nth-child(2):hover {
   cursor: pointer;
 }
 #overlay {
-  width: 100vw;
+  width: 100%;
   height: 100dvh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: rgb(255 255 255 / 70%);
